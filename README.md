@@ -11,4 +11,4 @@ hex values of google docs/sheets colors. Adapted from <https://spreadsheet.dev/h
 - `=="const COLORS={"&char(10)&"  "&join(char(10)&"  ",vstack(TOCOL(N3:W3), tocol(TRANSPOSE(N4:W10))))&char(10)&"}"`
 
 ### Display
-[!light mode](light_mode.png)
+![light mode colors](light_mode.png)
