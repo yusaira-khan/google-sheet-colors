@@ -8,7 +8,9 @@ hex values of google docs/sheets colors. Adapted from <https://spreadsheet.dev/h
 - `=let(parts,split(B1,char(10)), hex, index(parts,1,2), name, index(parts,1,1), "const COLOR_"&upper(substitute(name," ","_"))&" = """&hex&"""")`
 - `=join(char(10),vstack(TOCOL(N3:W3), tocol(TRANSPOSE(N4:W10))))`
 - `=let(parts,split(B1,char(10)), hex, index(parts,1,2), name, index(parts,1,1), """"&substitute(name," ","_")&""": """&hex&""",")`
-- `=="const COLORS={"&char(10)&"  "&join(char(10)&"  ",vstack(TOCOL(N3:W3), tocol(TRANSPOSE(N4:W10))))&char(10)&"}"`
+- `="const COLORS="&join(char(10)&"  ",vstack("{",TOCOL(N3:W3), tocol(TRANSPOSE(N4:W10))))&char(10)&"}"`
+- `=let(parts,split(B1,char(10)), hex, index(parts,1,2), name, index(parts,1,1), "--"&substitute(name," ","-")&": "&hex&";")`
+- `=":root "&join(char(10)&"    ",vstack("{",TOCOL(N3:W3), tocol(TRANSPOSE(N4:W10))))&char(10)&"}"`
 
 ## Display
 
@@ -16,5 +18,5 @@ hex values of google docs/sheets colors. Adapted from <https://spreadsheet.dev/h
 ![light mode colors](light_mode.png)
 
 ### Dark Mode
-![dark mode colors](dark_mode_android.png)
+![dark mode colors](dark_mode_ios.jpg)
 
