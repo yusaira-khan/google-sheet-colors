@@ -31,6 +31,8 @@ hex values of google docs/sheets colors. Adapted from <https://spreadsheet.dev/h
 |||||||||||||
 |black|||||gray||||white|
 |$`{\Huge \color[RGB]{0,0,0}\blacksquare\blacksquare}`$|$`{\Huge \color[RGB]{67,67,67}\blacksquare\blacksquare}`$|$`{\Huge \color[RGB]{102,102,102}\blacksquare\blacksquare}`$|$`{\Huge \color[RGB]{153,153,153}\blacksquare\blacksquare}`$|$`{\Huge \color[RGB]{183,183,183}\blacksquare\blacksquare}`$|$`{\Huge \color[RGB]{204,204,204}\blacksquare\blacksquare}`$|$`{\Huge \color[RGB]{217,217,217}\blacksquare\blacksquare}`$|$`{\Huge \color[RGB]{239,239,239}\blacksquare\blacksquare}`$|$`{\Huge \color[RGB]{243,243,243}\blacksquare\blacksquare}`$|$`{\Huge \color[RGB]{255,255,255}\blacksquare\blacksquare}`$|
+
+
 see code or [this issue](/../../issues/2) for hex values
 
 ### Light Mode
