@@ -11,6 +11,11 @@ hex values of google docs/sheets colors. Adapted from <https://spreadsheet.dev/h
 - `="const COLORS="&join(char(10)&"  ",vstack("{",TOCOL(N3:W3), tocol(TRANSPOSE(N4:W10))))&char(10)&"}"`
 - `=let(parts,split(B1,char(10)), hex, index(parts,1,2), name, index(parts,1,1), "--"&substitute(name," ","-")&": "&hex&";")`
 - `=":root "&join(char(10)&"    ",vstack("{",TOCOL(N3:W3), tocol(TRANSPOSE(N4:W10))))&char(10)&"}"`
+- `=let(parts,split(B20,char(10)), hex, index(parts,1,2), name, index(parts,1,1), name)`
+- `= join(char(10),BYROW(VSTACK(N2:W2,N2:W2,N4:W10), lambda(x_,join("|",hstack("",x_,"") ))))`
+-   ```
+      =let(parts,split(B1,char(10)), hex, index(parts,1,2), name, substitute(index(parts,1,1)," ","-"), name&" `"&hex&"`"&$S$1&HEX2RGB(hex)&$V$1 )
+    ```
 
 ## Display
 
